@@ -45,9 +45,9 @@ ul {
 
 .nav-links {
   display: flex;
-  gap: 30px;
-  margin-left: auto !important;
-  padding-right: 50px !important;
+    gap: 71px;
+    margin-left: auto !important;
+    margin-right: 150px;
 }
 
 .nav-links li {
@@ -56,7 +56,7 @@ ul {
 
 .nav-links a {
   color: #010101;
-  font-size: 1em;
+  font-size: 2em;
   transition: color 0.3s;
 }
 
@@ -68,12 +68,13 @@ ul {
   background: transparent;
   border: none;
   color: #010101;
-  font-size: 1em;
+  font-size: 2em;
   cursor: pointer;
 }
 
 .logo img {
-  height: 60px;
+  height: 140px;
+  margin-left: 50px;
   padding: 0;
   border: 0;
 }
@@ -135,12 +136,17 @@ ul {
 /* Стилі для секції "Hero" */
 .hero {
   position: relative;
-  background-image: url("../-Photo-/MAIN/Фон головної сторінки.jpg");
+  background-image: url("./-Photo-/MAIN/Фон головної сторінки.jpg");
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 90vh;
   color: white;
   padding-top: 80px;
+}
+
+.icon {
+  width: 130px;
+  height: 130px;
 }
 
 .hero::before {
@@ -161,42 +167,38 @@ ul {
 
 .hero h1 {
   font-size: 7vw;
-  margin-top: 7%;
+  margin: 462px 0 20px 80px;
   color: black;
-  margin-bottom: 7%;
   text-align: left;
-  padding-left: 20px;
+  padding: 0;
   font-weight: bold;
 }
 
 .hero p {
-  font-size: 2vw;
-  margin: 40px 0 -45 0;
+  font-size: 4vw;
+  margin: 5px 0 0 80px;
+  padding: 0;
   text-align: left;
   white-space: pre;
-  padding-left: 20px;
+  
 }
 
 .contour {
   position: absolute;
-  bottom: 1%;
-  left: 5%;
-  right: 5%;
-  text-align: left;
+  bottom: 5%;
   z-index: 2;
   white-space: pre;
 }
 
 .contour img {
-  width: 10%;
+  width: 360px;
   height: auto;
   float: left;
-  margin-right: 10px;
-  padding-left: 4.8%;
+  margin-left: 30px;
 }
 
 .contour p {
-  font-size: 1vw;
+  font-size: 3vw;
   margin: 0;
   white-space: pre;
   text-align: left;
@@ -236,6 +238,7 @@ ul {
   height: 55px;
 }
 
+
 .feature {
   text-align: center;
 }
@@ -248,16 +251,18 @@ ul {
 }
 
 .feature p {
+  padding: 0px;
   margin: 5px 0 0;
   text-align: center;
+  font-size: 30px;
 }
 
 /* Стилі для секції "Why" */
 .why {
   position: relative;
-  background: url("../-Photo-/MAIN/ліс.png") no-repeat center center;
+  background: url("./-Photo-/MAIN/ліс.png") no-repeat center center;
   background-size: cover;
-  padding: 60px 20px;
+  padding: 60px 0px;
   text-align: left;
   color: white;
 }
@@ -302,17 +307,21 @@ ul {
 .why-item {
   display: flex;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .why-item img {
-  width: 40%;
+  width: 52%;
   height: 10%;
-  margin-right: 20px;
+  
 }
 
 .why-item p {
-  font-size: 1em;
+  font-size: 1.4em;
   color: white;
+  padding: 0px;
+  margin-left: 35px;
+  margin-right: 20px;
 }
 
 .why-item.reverse {
@@ -328,7 +337,7 @@ ul {
   background-color: #d1e0d5;
   padding: 20px 0;
   text-align: center;
-  background: url("../-Photo-/MAIN/Зелений_вершок.png") no-repeat center center;
+  background: url("./-Photo-/MAIN/Зелений_вершок.png") no-repeat center center;
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -340,7 +349,7 @@ ul {
 .photo h1 {
   font-size: 5vw;
   margin-bottom: 5vw;
-  margin-top: 2vw;
+  margin-top: 10vw;
   font-weight: 700;
 }
 
@@ -358,7 +367,7 @@ ul {
 }
 
 .photo1 img {
-  width: 300px;
+  width: 31vw;
   height: auto;
 }
 
@@ -372,6 +381,14 @@ ul {
 
 .photo-description p {
   margin: 0 10px;
+}
+
+.clickBox {
+  height: 30vw;
+}
+
+.click {
+  width: 30vw;
 }
 
 .click-icon img {
