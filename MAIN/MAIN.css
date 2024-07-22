@@ -1,0 +1,727 @@
+/* Основні стилі */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #99ed82;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стилі навігації */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.116);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-left: auto !important;
+  padding-right: 50px !important;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #010101;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8ebc81;
+}
+
+.language-select {
+  background: transparent;
+  border: none;
+  color: #010101;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 60px;
+  padding: 0;
+  border: 0;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: 30px;
+  padding-right: 8px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.burger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #a19282;
+  margin-top: 0;
+}
+
+.nav-links.active li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Стилі для секції "Hero" */
+.hero {
+  position: relative;
+  background-image: url("../-Photo-/MAIN/Фон головної сторінки.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: white;
+  padding-top: 80px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 7vw;
+  margin-top: 7%;
+  color: black;
+  margin-bottom: 7%;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 2vw;
+  margin: 40px 0 -45 0;
+  text-align: left;
+  white-space: pre;
+  padding-left: 20px;
+}
+
+.contour {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+  z-index: 2;
+  white-space: pre;
+}
+
+.contour img {
+  width: 10%;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  padding-left: 4.8%;
+}
+
+.contour p {
+  font-size: 1vw;
+  margin: 0;
+  white-space: pre;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Стилі для секції "Features" */
+.features {
+  background: #d1e0d5;
+  padding: 20px 0;
+}
+
+.features .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature img.houses {
+  width: 60px;
+  height: 50px;
+}
+
+.feature img.churches {
+  width: 45px;
+  height: 65px;
+}
+
+.feature img.baths {
+  width: 60px;
+  height: 45px;
+}
+
+.feature img.gazebos {
+  width: 55px;
+  height: 55px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature p {
+  margin: 5px 0 0;
+  text-align: center;
+}
+
+/* Стилі для секції "Why" */
+.why {
+  position: relative;
+  background: url("../-Photo-/MAIN/ліс.png") no-repeat center center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: left;
+  color: white;
+}
+
+.why::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.why .title,
+.why .why-container {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3.3vw;
+}
+
+.highlight {
+  color: rgb(94, 183, 94);
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.3vw;
+  line-height: 1.35;
+}
+
+.why-item {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.why-item img {
+  width: 40%;
+  height: 10%;
+  margin-right: 20px;
+}
+
+.why-item p {
+  font-size: 1em;
+  color: white;
+}
+
+.why-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.why-item.reverse img {
+  margin-left: 20px;
+}
+
+/* Стилі для секції "Photo" */
+.photo {
+  background-color: #d1e0d5;
+  padding: 20px 0;
+  text-align: center;
+  background: url("../-Photo-/MAIN/Зелений_вершок.png") no-repeat center center;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: white;
+  padding-top: 80px;
+}
+
+.photo h1 {
+  font-size: 5vw;
+  margin-bottom: 5vw;
+  margin-top: 2vw;
+  font-weight: 700;
+}
+
+.titleblack {
+  color: black;
+}
+
+.titlegray {
+  color: gray;
+}
+
+.photo1 {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.photo1 img {
+  width: 300px;
+  height: auto;
+}
+
+.photo-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.photo-description p {
+  margin: 0 10px;
+}
+
+.click-icon img {
+  width: 30px;
+  height: auto;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+}
+
+.more_photos img {
+  width: 23vw;
+  height: auto;
+  margin-bottom: 7vw;
+  margin-left: 11vw;
+}
+
+.circle img {
+  width: 13vw;
+  height: auto;
+  margin-bottom: 3vw;
+  margin-left: 11vw;
+}
+
+.photo_text p {
+  color: black;
+  text-align: left;
+  margin-left: 28vw;
+  white-space: pre;
+  margin-top: 13vw;
+  max-width: 60%; /* Додаємо обмеження ширини тексту */
+}
+
+/* Стилі для секції " Pooter " */
+footer {
+  background-color: #2b4d3f;
+  color: white;
+  padding: 20px;
+}
+
+.logo_f h1 {
+  font-size: 6vw;
+  padding: 0 0 0vw 20vw;
+  font-weight: 500;
+  color: black;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+  padding: 4.3vw 29vw 0 0;
+  float: right;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 50px;
+}
+
+.footer-about,
+.footer-logo,
+.footer-contacts,
+.footer-navigation {
+  flex: 1;
+}
+
+.footer-about h3,
+.footer-contacts h3,
+.footer-navigation h3 {
+  color: #5ec55e;
+}
+
+.footer-about p,
+.footer-contacts p {
+  margin: 0 6vw 2vw -5vw;
+}
+
+.footer-contacts .icon {
+  width: 60px; /* Збільшує розмір контейнера */
+  height: 60px; /* Збільшує розмір контейнера */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px; /* Збільшує відступ для більшої рамки */
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px; /* Додає внутрішні відступи, щоб зберегти розмір іконки незмінним */
+  box-sizing: border-box; /* Включає відступ в розміри контейнера */
+}
+
+.e-mail .icon img {
+  padding-left: 1vw;
+}
+
+.footer-contacts a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navigation li {
+  margin: 10px 0;
+}
+
+.footer-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-contacts h3,
+p {
+  padding-left: 5vw;
+}
+
+.highlight {
+  color: #5ec55e;
+}
+
+.consult-link {
+  display: inline-block;
+  padding: 5px 10px; /* Зменшуємо відступи для меншої рамки */
+  border: 1px solid #5ec55e;
+  border-radius: 50px; /* Радіус рамки для більш округлих країв */
+  background: rgba(255, 255, 255, 0.5);
+  color: #5ec55e;
+  text-decoration: none;
+  text-align: center; /* Вирівнювання тексту по горизонталі */
+  vertical-align: middle; /* Вирівнювання тексту по вертикалі */
+  line-height: 1; /* Нормалізуємо висоту рядка */
+  margin: -1vw 0 3vw 5vw;
+}
+
+.consult-link:hover {
+  background: #5ec55e;
+  color: #2b4d3f;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+  .photo h1 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+    margin-top: 15vw;
+    font-weight: 700;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #a19282;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 10vw;
+    padding-left: 10px;
+  }
+
+  .hero p {
+    font-size: 4vw;
+    padding-left: 10px;
+  }
+  .feature p {
+    padding: 0;
+  }
+  .contour img {
+    width: 20%;
+    padding-left: 10px;
+  }
+
+  .contour p {
+    font-size: 2.5vw;
+  }
+
+  .features .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features .feature {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature img {
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature p {
+    text-align: center;
+  }
+
+  .why-container {
+    font-size: 3vw;
+  }
+
+  .photo {
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .photo1 {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .photo1 img {
+    width: 90%;
+  }
+
+  .photo-text {
+    text-align: center;
+  }
+
+  .photo-text p {
+    font-size: 3.5vw;
+    text-align: center;
+    padding-left: 16vw;
+  }
+
+  .circle {
+    position: relative;
+    width: auto;
+    margin: 0 auto 20px;
+  }
+
+  .circle img {
+    width: 20vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-logo,
+  .footer-contacts,
+  .footer-navigation {
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+
+  .footer-logo img {
+    width: 80px;
+    padding-left: 35vw;
+  }
+
+  .logo_f h1 {
+    font-size: 10vw;
+    padding: 0;
+    text-align: center;
+    color: black;
+  }
+
+  .footer-about p,
+  .footer-contacts p {
+    margin: 0;
+  }
+
+  .footer-contacts .icon {
+    width: 50px; /* Збільшує розмір контейнера */
+    height: 50px; /* Збільшує розмір контейнера */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px; /* Збільшує відступ для більшої рамки */
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px; /* Додає внутрішні відступи, щоб зберегти розмір іконки незмінним */
+    box-sizing: border-box; /* Включає відступ в розміри контейнера */
+  }
+
+  .footer-contacts h3,
+  .footer-contacts p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer-contacts h3 {
+    margin-top: 20px;
+  }
+
+  .consult-link {
+    margin: 10px 0;
+    padding: 5px 15px;
+  }
+
+  .footer-navigation ul {
+    padding: 0;
+  }
+
+  .footer-navigation li {
+    margin: 5px 0;
+  }
+
+  footer {
+    background-color: #2b4d3f;
+    padding: 20px;
+    color: white;
+  }
+
+  .footer-about h3,
+  .footer-contacts h3,
+  .footer-navigation h3 {
+    color: #5ec55e;
+  }
+}
