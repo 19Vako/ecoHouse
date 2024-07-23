@@ -1,4 +1,429 @@
-/* Основні стилі */
+
+@media (min-width: 375px) {
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    body {
+      font-family: "Montserrat", sans-serif;
+      background-color: #f9f9f9;
+      overflow-x: hidden;
+      font-size: 18px; /* Збільшення шрифту */
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: #99ed82;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    /* Стилі навігації */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 13px;
+      background-color: rgba(255, 255, 255, 0.116);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      transition: background-color 0.3s, padding 0.3s;
+    }
+    
+    .navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px 20px;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 3vw;
+      margin-left: auto !important;
+      margin-right: 4vw;
+    }
+    
+    .nav-links li {
+      position: relative;
+    }
+    
+    .nav-links a {
+      color: white;
+      font-size: 2.5vw;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: #8ebc81;
+    }
+    
+    .language-select {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 2vw;
+      cursor: pointer;
+    }
+    
+    .logo img {
+      color: white;
+      height: 6vw;
+      margin-left: 4vw;
+      padding: 0;
+      border: 0;
+    }
+    
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    
+    .menu-icon img {
+      width: 30px;
+      height: 30px;
+      padding-right: 8px;
+    }
+    
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
+      transition: all 0.3s;
+    }
+    
+    .burger.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .burger.active div:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #a19282;
+      margin-top: 0;
+    }
+    
+    .NNNNN,
+    .houses,
+    .churches,
+    .baths,
+    .feature {
+      box-sizing: border-box;
+    
+    }
+    
+    .houses {
+      background-image: url("../-Photo-/SERVICES AND PRODUCTS/Будинок.jpg");
+      background-color: rgba(0, 0, 0, 0.9);
+      background-size: cover;
+      background-position: center center;
+      height: 66vw;
+      color: white;
+      position: relative;
+      text-align: left;
+    }
+    
+    .houses::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Затемнення */
+      z-index: 1;
+    }
+    
+    .houses h1,
+    .baths h1 {
+      color: white;
+        position: relative;
+        z-index: 1;
+        font-size: 5vw;
+        padding: 31vw 51vw 0vw 5vw;
+        margin: 0;
+    }
+    
+    .houses p,
+    .baths p {
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 2vw;
+      z-index: 1;
+      padding: 0vw 8vw 6vw 5vw;
+    }
+    
+    .churches {
+      background-image: url("../-Photo-/SERVICES AND PRODUCTS/Церква.jpg");
+      background-color: rgba(0, 0, 0, 0.9);
+      background-size: cover;
+      background-position: center center;
+      height: 66vw;
+      color: white;
+      position: relative;
+      text-align: left;
+    }
+    
+    .churches h1 {
+      color: white;
+        position: relative;
+        z-index: 1;
+        font-size: 5vw;
+        padding: 33vw 51vw 0vw 5vw;
+        margin: 0;
+    }
+    
+    .churches::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Затемнення */
+      z-index: 1;
+    }
+    
+    .baths {
+      background-image: url("../-Photo-/SERVICES AND PRODUCTS/Баня.png");
+      background-color: rgba(0, 0, 0, 0.9);
+      background-size: cover;
+      background-position: center center;
+      height: 66vw;
+      color: white;
+      position: relative;
+      text-align: left;
+    }
+    
+    .baths::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Затемнення */
+      z-index: 1;
+    }
+    
+    .feature {
+      background-image: url("../-Photo-/SERVICES AND PRODUCTS/Альтанки.jpg");
+      background-color: rgba(0, 0, 0, 0.9);
+      background-size: cover;
+      background-position: center center;
+      height: 66vw;
+      color: white;
+      position: relative;
+      text-align: left;
+    }
+    
+    .feature::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Затемнення */
+      z-index: 1;
+    }
+    
+    .feature h1 {
+      color: white;
+      position: relative;
+      z-index: 1;
+      font-size: 5vw;
+      padding: 27vw 51vw 0vw 5vw;
+      margin: 0;
+    }
+    .feature p {
+      color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 2vw;
+        z-index: 1;
+        padding: 0vw 8vw 6vw 5vw;
+    }
+    
+    .churches p {
+      color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 2vw;
+        z-index: 1;
+        padding: 0vw 8vw 6vw 5vw;
+    }
+    
+    /* Стилі для секції " Footer " */
+    footer {
+      background-color: #2b4d3f;
+      color: white;
+      padding: 20px;
+    }
+    
+    .logo_f {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo_f h1 {
+      font-size: 5vw;
+      color: black;
+      font-family: monospace;
+    }
+    
+    .footer-logo  {
+      width: 12vw;
+      height: auto;
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 0 50px;
+    }
+    
+    .footer-about h3,
+    .footer-contacts h3,
+    .footer-navigation h3 {
+      color: #5ec55e;
+      font-size: 2vw;
+    }
+    
+    .footer-about p,
+    .footer-contacts p {
+      font-size: 1.5vw;
+        padding: 0;
+        margin-right: 3vw;
+    }
+    
+    .footer-contacts .icon {
+      width: 5vw;
+        height: 5vw;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 1vw;
+        vertical-align: middle;
+        text-align: center;
+        
+        box-sizing: border-box;
+    }
+    
+    .e-mail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .e-mail .icon img {
+      padding-left: 1vw;
+    }
+    
+    .footer-contacts a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1vw;
+      margin-bottom: 1vw;
+    }
+    
+    .footer-contacts a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-navigation ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-navigation li {
+      margin: 0px 0;
+    
+    }
+    
+    .footer-navigation a {
+      color: white;
+        text-decoration: none;
+        font-size: 1.5vw;
+    }
+    
+    .footer-navigation a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-contacts h3,
+    p {
+      padding-left: 5vw;
+    }
+    
+    .highlight {
+      color: #5ec55e;
+    }
+    
+    .consult-link {
+      display: inline-block;
+      padding: 5px 10px; 
+      border: 1px solid #5ec55e;
+      border-radius: 50px; 
+      background: rgba(255, 255, 255, 0.5);
+      color: #5ec55e;
+      text-decoration: none;
+      text-align: center; 
+      vertical-align: middle; 
+      line-height: 1; 
+     
+    }
+    
+    .consult-link:hover {
+      background: #5ec55e;
+      color: #2b4d3f;
+    } 
+} 
+
+
+@media (min-width: 1000px) {
+  
 html,
 body {
   margin: 0;
@@ -35,7 +460,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-top: 13px;
   background-color: rgba(255, 255, 255, 0.116);
   position: fixed;
   width: 100%;
@@ -52,9 +477,9 @@ ul {
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 3vw;
   margin-left: auto !important;
-  padding-right: 50px !important;
+  margin-right: 4vw;
 }
 
 .nav-links li {
@@ -62,8 +487,8 @@ ul {
 }
 
 .nav-links a {
-  color: #010101;
-  font-size: 1em;
+  color: white;
+  font-size: 2vw;
   transition: color 0.3s;
 }
 
@@ -74,13 +499,15 @@ ul {
 .language-select {
   background: transparent;
   border: none;
-  color: #010101;
-  font-size: 1em;
+  color: white;
+  font-size: 2vw;
   cursor: pointer;
 }
 
 .logo img {
-  height: 60px;
+  color: white;
+  height: 6vw;
+  margin-left: 4vw;
   padding: 0;
   border: 0;
 }
@@ -140,7 +567,7 @@ ul {
 .baths,
 .feature {
   box-sizing: border-box;
-  padding: 20px 0 20px 0;
+
 }
 
 .houses {
@@ -148,7 +575,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.9);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 66vw;
   color: white;
   position: relative;
   text-align: left;
@@ -165,16 +592,45 @@ ul {
   z-index: 1;
 }
 
+.houses h1,
+.baths h1 {
+  color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 5vw;
+    padding: 31vw 51vw 0vw 5vw;
+    margin: 0;
+}
+
+.houses p,
+.baths p {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2vw;
+  z-index: 1;
+  padding: 0vw 8vw 6vw 5vw;
+}
+
 .churches {
   background-image: url("../-Photo-/SERVICES AND PRODUCTS/Церква.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 66vw;
   color: white;
   position: relative;
-  padding-right: 15vw;
-  text-align: right;
+  text-align: left;
+}
+
+.churches h1 {
+  color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 5vw;
+    padding: 33vw 51vw 0vw 5vw;
+    margin: 0;
 }
 
 .churches::before {
@@ -190,10 +646,10 @@ ul {
 
 .baths {
   background-image: url("../-Photo-/SERVICES AND PRODUCTS/Баня.png");
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 66vw;
   color: white;
   position: relative;
   text-align: left;
@@ -212,14 +668,13 @@ ul {
 
 .feature {
   background-image: url("../-Photo-/SERVICES AND PRODUCTS/Альтанки.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
-  width: 100%;
+  height: 66vw;
   color: white;
   position: relative;
-  text-align: right;
+  text-align: left;
 }
 
 .feature::before {
@@ -233,63 +688,56 @@ ul {
   z-index: 1;
 }
 
-.houses h1,
-.baths h1 {
-  color: white;
-  position: relative;
-  z-index: 1;
-  font-size: 5vw;
-  padding: 10vw 20vw 0vw 5vw;
-}
-.houses p,
-.baths p {
-  color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 23px;
-  z-index: 1;
-  padding: 10vw 20vw 0vw 5vw;
-}
-.churches h1,
 .feature h1 {
   color: white;
   position: relative;
   z-index: 1;
   font-size: 5vw;
-  padding: 10vw 5vw 0vw 20vw;
+  padding: 27vw 51vw 0vw 5vw;
+  margin: 0;
+}
+.feature p {
+  color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2vw;
+    z-index: 1;
+    padding: 0vw 8vw 6vw 5vw;
 }
 
-.churches p,
-.feature p {
-  padding: 10vw 5vw 0vw 20vw;
+.churches p {
   color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 23px;
-  z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2vw;
+    z-index: 1;
+    padding: 0vw 8vw 6vw 5vw;
 }
 
 /* Стилі для секції " Footer " */
 footer {
   background-color: #2b4d3f;
   color: white;
-  padding: 10px;
+  padding: 20px;
+}
+
+.logo_f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo_f h1 {
-  font-size: 6vw;
-  padding: 0 0 0vw 20vw;
-  font-weight: 500;
+  font-size: 5vw;
   color: black;
+  font-family: monospace;
 }
 
-.footer-logo img {
-  width: 100px;
+.footer-logo  {
+  width: 12vw;
   height: auto;
-  padding: 4.3vw 29vw 0 0;
-  float: right;
 }
 
 .footer-container {
@@ -299,35 +747,37 @@ footer {
   padding: 0 50px;
 }
 
-.footer-about,
-.footer-logo,
-.footer-contacts,
-.footer-navigation {
-  flex: 1;
-}
-
 .footer-about h3,
 .footer-contacts h3,
 .footer-navigation h3 {
   color: #5ec55e;
+  font-size: 2vw;
 }
 
 .footer-about p,
 .footer-contacts p {
-  margin: 0 6vw 2vw -5vw;
+  font-size: 1.5vw;
+    padding: 0;
+    margin-right: 3vw;
 }
 
 .footer-contacts .icon {
-  width: 60px; /* Збільшує розмір контейнера */
-  height: 60px; /* Збільшує розмір контейнера */
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 20px; /* Збільшує відступ для більшої рамки */
-  vertical-align: middle;
-  text-align: center;
-  padding: 10px; /* Додає внутрішні відступи, щоб зберегти розмір іконки незмінним */
-  box-sizing: border-box; /* Включає відступ в розміри контейнера */
+  width: 5vw;
+    height: 5vw;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.e-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .e-mail .icon img {
@@ -338,6 +788,8 @@ footer {
   color: white;
   text-decoration: none;
   display: inline-block;
+  font-size: 1vw;
+  margin-bottom: 1vw;
 }
 
 .footer-contacts a:hover {
@@ -351,11 +803,13 @@ footer {
 
 .footer-navigation li {
   margin: 10px 0;
+
 }
 
 .footer-navigation a {
   color: white;
   text-decoration: none;
+  font-size: 1.5vw;
 }
 
 .footer-navigation a:hover {
@@ -373,126 +827,20 @@ p {
 
 .consult-link {
   display: inline-block;
-  padding: 5px 10px; /* Зменшуємо відступи для меншої рамки */
+  padding: 5px 10px; 
   border: 1px solid #5ec55e;
-  border-radius: 50px; /* Радіус рамки для більш округлих країв */
+  border-radius: 50px; 
   background: rgba(255, 255, 255, 0.5);
   color: #5ec55e;
   text-decoration: none;
-  text-align: center; /* Вирівнювання тексту по горизонталі */
-  vertical-align: middle; /* Вирівнювання тексту по вертикалі */
-  line-height: 1; /* Нормалізуємо висоту рядка */
-  margin: -1vw 0 3vw 5vw;
+  text-align: center; 
+  vertical-align: middle; 
+  line-height: 1; 
+ 
 }
 
 .consult-link:hover {
   background: #5ec55e;
   color: #2b4d3f;
-}
-
-/* Адаптивні стилі */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    background-color: #a19282;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-about,
-  .footer-logo,
-  .footer-contacts,
-  .footer-navigation {
-    margin: 10px 0;
-    padding: 0 20px;
-  }
-
-  .footer-logo img {
-    width: 80px;
-    padding-left: 35vw;
-  }
-
-  .logo_f h1 {
-    font-size: 10vw;
-    padding: 0;
-    text-align: center;
-    color: black;
-  }
-
-  .footer-about p,
-  .footer-contacts p {
-    margin: 0;
-  }
-
-  .footer-contacts .icon {
-    width: 50px; /* Збільшує розмір контейнера */
-    height: 50px; /* Збільшує розмір контейнера */
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    display: inline-block;
-    margin: 20px; /* Збільшує відступ для більшої рамки */
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px; /* Додає внутрішні відступи, щоб зберегти розмір іконки незмінним */
-    box-sizing: border-box; /* Включає відступ в розміри контейнера */
-  }
-
-  .footer-contacts h3,
-  .footer-contacts p {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .footer-contacts h3 {
-    margin-top: 20px;
-  }
-
-  .consult-link {
-    margin: 10px 0;
-    padding: 5px 15px;
-  }
-
-  .footer-navigation ul {
-    padding: 0;
-  }
-
-  .footer-navigation li {
-    margin: 5px 0;
-  }
-
-  footer {
-    background-color: #2b4d3f;
-    padding: 20px;
-    color: white;
-  }
-
-  .footer-about h3,
-  .footer-contacts h3,
-  .footer-navigation h3 {
-    color: #5ec55e;
-  }
+} 
 }
