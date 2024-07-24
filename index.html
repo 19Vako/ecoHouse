@@ -13,14 +13,12 @@
     />
   </head>
   <body>
+
     <header>
       <nav class="navbar">
         <div class="logo">
           <a href="index.html">
-            <img
-              src="./-Photo-/GENERAL/Емблема-до-логотипу.png"
-              alt="EcoHouse"
-            />
+            <img src="./-Photo-/GENERAL/Емблема-до-логотипу.png" alt="EcoHouse"/>
           </a>
         </div>
         <ul class="nav-links">
@@ -29,21 +27,36 @@
           <li><a href="#">Про нас</a></li>
           <li><a href="./CONTACTS/CONTACTS.html">Контакти</a></li>
           <li>
-            <select class="language-select">
+              <select class="language-select">
               <option value="ua">UA</option>
               <option value="en">EN</option>
-            </select>
+              </select>
           </li>
         </ul>
-        <div class="menu-icon">
-          <img
-            src="./-Photo-/GENERAL/Меню.png"
-            alt="Menu Icon"
-            id="menu-icon"
-          />
+
+      <div  class="nav-links-button" onclick="">
+        
+        <select id="language" class="language-select">
+          <option value="ua">UA</option>
+          <option value="en">EN</option>
+        </select>
+
+        <div id="menu-button" class="menu-icon" onclick="">
+          <img src="./-Photo-/GENERAL/Меню.png" alt="Menu Icon" id="menu-icon"/>
         </div>
+      </div>
+      
       </nav>
+      <div id="mini-nav-links" class="mini-nav-links">
+        <ul class="nav-links-mini">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="./SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="./CONTACTS/CONTACTS.html">Контакти</a></li>
+        </ul>
+      </div>
     </header>
+
     <section class="hero">
       <div class="hero-overlay"></div>
       <div class="container">
@@ -60,6 +73,7 @@
         <p>Працюємо по всій <br>території України, а також<br>на експорт по всій Європі.</p>
       </div>
     </section>
+
     <section class="features">
       <div class="container">
         <div class="feature">
@@ -88,6 +102,7 @@
         </div>
       </div>
     </section>
+
     <section class="why">
       <div class="why-overlay"></div>
       <div class="title">
@@ -218,6 +233,8 @@
         </div>
       </div>
     </footer>
-    <script defer src="index.html"></script>
+
+    <script defer src="index.js"></script>
+
   </body>
 </html>

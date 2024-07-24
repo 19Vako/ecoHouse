@@ -139,8 +139,6 @@ ul {
   padding: 9vw 0 0 0;
 }
 
-/*.photo-gallery-container img {}*/
-
 .photo-gallery-container {
   position: relative;
   margin-bottom: 70px; /* Щоб уникнути перекриття футером */
@@ -366,7 +364,7 @@ p {
   color: #2b4d3f;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 375px) {
   body {
     font-family: "Montserrat", sans-serif;
     padding: 0;

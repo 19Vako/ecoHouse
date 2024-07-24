@@ -1,10 +1,13 @@
 /* Основні стилі */
+ 
+
+ @media (min-width: 1000px) {
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
-  overflow-x: hidden;
+ 
 }
 
 a {
@@ -28,11 +31,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background: url("../-Photo-/CONTACTS/Фон\ header\ .jpg") no-repeat center
-    center;
-  background-size: cover;
+  padding-top: 13px;
+  background-image: url('../-Photo-/MAIN/Фон головної сторінки.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
   position: fixed;
+  height: 7vw;
   width: 100%;
   top: 0;
   left: 0;
@@ -40,37 +45,23 @@ ul {
   transition: background-color 0.3s, padding 0.3s;
 }
 
-.navbar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* Зробити фон світлішим */
-  z-index: -1;
-}
-
-.navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 10px 20px;
-}
-
 .nav-links {
   display: flex;
-  gap: 30px;
-  margin-left: auto !important;
-  padding-right: 50px !important;
+    gap: 3vw;
+    margin-left: auto !important;
+    margin-right: 4vw;
 }
-
+ 
 .nav-links li {
   position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-links a {
-  color: #010101;
-  font-size: 1em;
+  color: white;
+  font-size: 2vw;
   transition: color 0.3s;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-links a:hover {
@@ -80,13 +71,22 @@ ul {
 .language-select {
   background: transparent;
   border: none;
-  color: #010101;
-  font-size: 1em;
+  color: white;
+  font-size: 2vw;
   cursor: pointer;
 }
 
+#language {
+  display: none;
+}
+
+.logo {
+margin-left: 4vw;
+}
+
 .logo img {
-  height: 60px;
+  height: 6vw;
+  margin-left: 4vw;
   padding: 0;
   border: 0;
 }
@@ -103,6 +103,8 @@ ul {
   padding-right: 8px;
 }
 
+
+
 /* Стилі для секції "Contact" */
 .contact {
   padding: 120px 20px 20px;
@@ -110,7 +112,7 @@ ul {
   background: url("../-Photo-/CONTACTS/Фон.png") no-repeat center center;
   background-size: cover;
   overflow-x: hidden;
-  min-height: 100vh;
+  
 }
 
 .header-title {
@@ -119,15 +121,18 @@ ul {
 }
 
 .contact h1 {
-  font-size: 3em;
+  font-size: 7vw;
+  margin-left: 2.3vw;
   margin-bottom: 0;
   position: relative;
   display: inline-block;
 }
 
 .underline {
-  width: 220px;
-  height: 4px;
+  width: 39vw;
+  margin-left: 1vw;
+  height: 1vw;
+  border-radius: 20px;
   background-color: #5ec55e;
   position: absolute;
   bottom: -5px;
@@ -140,34 +145,60 @@ ul {
   margin-top: 40px;
 }
 
-.contact .address,
-.consultation {
-  flex: 1;
-  margin: 20px;
+.address{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2vw;
+  margin-left: 0vw;
+  margin-right: 0;
 }
+
+.consultation {
+
+  display: flex;
+  margin: 20px;
+  margin-left: 3vw;
+  padding-top: 9vw;
+}
+
 
 .contact .address h2,
 .consultation h2 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #5ec55e;
+  font-size: 3vw;
+}
+
+
+.consultation h2 {
+  font-size: 2vw;
+}
+
+.address h2 {
+  font-size: 3vw;
 }
 
 .contact .address .map {
-  background-color: #fff;
-  border-radius: 10px;
-  height: 300px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;   
   overflow: hidden;
+  width: 39vw;
+  height: 32vw
 }
+
+
+.email {
+  margin-left: 4vw;
+}
+
 .e-mail .icon img {
   padding-left: 1vw;
 }
 
 .phone-numbers p,
 .email p {
-  font-size: 1.1em;
+  font-size: 1.5vw;
   color: #333;
+  padding: 0;
   display: flex;
   align-items: center;
   margin: 10px 0;
@@ -176,8 +207,8 @@ ul {
 .phone-numbers img,
 .email img {
   margin-right: 10px;
-  width: 30px;
-  height: 30px;
+  width: 5vw;
+ 
 }
 
 .consultation-btn-wrapper {
@@ -188,14 +219,15 @@ ul {
 
 .consultation-btn {
   background-color: #5ec55e;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 20px;
+        color: white;
+        border: none;
+        border-radius: 20vw;
+        padding: 1vw 2vw;
+        font-size: 3.2vw;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
 }
 
 .consultation-btn p {
@@ -206,27 +238,30 @@ ul {
   background-color: #4aa14a;
 }
 
-/* Стилі для футера */
 
-/* Стилі для секції " Pooter " */
+
+/* Стилі для секції " footer " */
 footer {
   background-color: #2b4d3f;
   color: white;
   padding: 20px;
 }
 
-.logo_f h1 {
-  font-size: 6vw;
-  padding: 0 0 0vw 20vw;
-  font-weight: 500;
-  color: black;
+.logo_f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-logo img {
-  width: 100px;
+.logo_f h1 {
+  font-size: 5vw;
+  color: black;
+  font-family: monospace;
+}
+
+.footer-logo  {
+  width: 12vw;
   height: auto;
-  padding: 4.3vw 29vw 0 0;
-  float: right;
 }
 
 .footer-container {
@@ -236,35 +271,37 @@ footer {
   padding: 0 50px;
 }
 
-.footer-about,
-.footer-logo,
-.footer-contacts,
-.footer-navigation {
-  flex: 1;
-}
-
 .footer-about h3,
 .footer-contacts h3,
 .footer-navigation h3 {
   color: #5ec55e;
+  font-size: 2vw;
 }
 
 .footer-about p,
 .footer-contacts p {
-  margin: 0 6vw 2vw -5vw;
+  font-size: 1.5vw;
+    padding: 0;
+    margin-right: 3vw;
 }
 
 .footer-contacts .icon {
-  width: 60px; /* Збільшує розмір контейнера */
-  height: 60px; /* Збільшує розмір контейнера */
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 20px; /* Збільшує відступ для більшої рамки */
-  vertical-align: middle;
-  text-align: center;
-  padding: 10px; /* Додає внутрішні відступи, щоб зберегти розмір іконки незмінним */
-  box-sizing: border-box; /* Включає відступ в розміри контейнера */
+  width: 5vw;
+    height: 5vw;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.e-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .e-mail .icon img {
@@ -275,6 +312,8 @@ footer {
   color: white;
   text-decoration: none;
   display: inline-block;
+  font-size: 1vw;
+  margin-bottom: 1vw;
 }
 
 .footer-contacts a:hover {
@@ -288,11 +327,13 @@ footer {
 
 .footer-navigation li {
   margin: 10px 0;
+
 }
 
 .footer-navigation a {
   color: white;
   text-decoration: none;
+  font-size: 1.5vw;
 }
 
 .footer-navigation a:hover {
@@ -310,148 +351,20 @@ p {
 
 .consult-link {
   display: inline-block;
-  padding: 5px 10px; /* Зменшуємо відступи для меншої рамки */
+  padding: 5px 10px; 
   border: 1px solid #5ec55e;
-  border-radius: 50px; /* Радіус рамки для більш округлих країв */
+  border-radius: 50px; 
   background: rgba(255, 255, 255, 0.5);
   color: #5ec55e;
   text-decoration: none;
-  text-align: center; /* Вирівнювання тексту по горизонталі */
-  vertical-align: middle; /* Вирівнювання тексту по вертикалі */
-  line-height: 1; /* Нормалізуємо висоту рядка */
-  margin: -1vw 0 3vw 5vw;
+  text-align: center; 
+  vertical-align: middle; 
+  line-height: 1; 
+ 
 }
 
 .consult-link:hover {
   background: #5ec55e;
   color: #2b4d3f;
-}
-
-/* Адаптивні стилі */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    background-color: #a19282;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .contact h1 {
-    font-size: 2em;
-  }
-
-  .contact-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact .address,
-  .consultation {
-    margin: 20px 0;
-  }
-
-  .contact .address .map {
-    height: 200px;
-  }
-
-  .consultation-btn-wrapper {
-    justify-content: center;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-about,
-  .footer-logo,
-  .footer-contacts,
-  .footer-navigation {
-    margin: 10px 0;
-    padding: 0 20px;
-  }
-
-  .footer-logo img {
-    width: 80px;
-    padding-left: 35vw;
-  }
-
-  .logo_f h1 {
-    font-size: 10vw;
-    padding: 0;
-    text-align: center;
-    color: black;
-  }
-
-  .footer-about p,
-  .footer-contacts p {
-    margin: 0;
-  }
-
-  .footer-contacts .icon {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    display: inline-block;
-    margin: 20px;
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .footer-contacts h3,
-  .footer-contacts p {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .footer-contacts h3 {
-    margin-top: 20px;
-  }
-
-  .consult-link {
-    margin: 10px 0;
-    padding: 5px 15px;
-  }
-
-  .footer-navigation ul {
-    padding: 0;
-  }
-
-  .footer-navigation li {
-    margin: 5px 0;
-  }
-
-  footer {
-    background-color: #2b4d3f;
-    padding: 20px;
-    color: white;
-  }
-
-  .footer-about h3,
-  .footer-contacts h3,
-  .footer-navigation h3 {
-    color: #5ec55e;
-  }
+} 
 }

@@ -1,6 +1,5 @@
 /* Основні стилі */
-
-@media (min-width: 375px) {
+@media (min-width: 0px) {
   body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -24,17 +23,17 @@
     padding: 0;
     margin: 0;
   }
-  
+
+  /* header */
   .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding-top: 13px;
     background-color: rgba(255, 255, 255, 0.116);
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
+    height: 7vh;
     z-index: 1000;
     transition: background-color 0.3s, padding 0.3s;
   }
@@ -45,10 +44,31 @@
   }
   
   .nav-links {
+    display: none;
+  }
+
+  .mini-nav-links {
+    display: none;
+    position: fixed;
+    margin-left: 55vw;
+    margin-top: 73px;
+    padding: 5vw;
+    z-index: 3;
+    background-color: #0101015c;
+  }
+  .mini-nav-links a {
+    color: white;
+    font-size: 5vw;
+    margin-left: 6.5vw;
+  }
+  .mini-nav-links li {
+    margin-bottom: 3vw;
     display: flex;
-      gap: 3vw;
-      margin-left: auto !important;
-      margin-right: 4vw;
+    justify-content: end;
+  }
+
+  .nav-links-button {
+    display: flex;
   }
   
   .nav-links li {
@@ -69,28 +89,39 @@
     background: transparent;
     border: none;
     color: #010101;
-    font-size: 2vw;
+    font-size: 3vw;
     cursor: pointer;
   }
-  
-  .logo img {
-    height: 6vw;
+
+  #language {
+    display: flex;
+  }
+
+  .logo {
     margin-left: 4vw;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-left: 0;
     padding: 0;
     border: 0;
   }
   
   .menu-icon {
-    display: none;
+    display: flex;
     cursor: pointer;
-    margin-right: 20px;
   }
   
   .menu-icon img {
-    width: 30px;
-    height: 30px;
-    padding-right: 8px;
+    width: 15vw;
+    height: 10vw;
+    padding: 0;
   }
+
+
+
+
   
   .burger {
     display: none;
@@ -467,7 +498,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 0 50px;
+    padding: 0;
   }
   
   .footer-about h3,
@@ -479,7 +510,7 @@
   
   .footer-about p,
   .footer-contacts p {
-    font-size: 1.5vw;
+    font-size: 2vw;
       padding: 0;
       margin-right: 3vw;
   }
@@ -525,7 +556,8 @@
   }
   
   .footer-navigation li {
-    margin: 0px 0;
+    margin: 3vw 0;
+    display: flex;
   }
   
   .footer-navigation a {
@@ -601,16 +633,12 @@ ul {
   padding-top: 13px;
   background-color: rgba(255, 255, 255, 0.116);
   position: fixed;
+  height: 7vw;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
   transition: background-color 0.3s, padding 0.3s;
-}
-
-.navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 20px;
 }
 
 .nav-links {
@@ -640,6 +668,10 @@ ul {
   color: #010101;
   font-size: 2vw;
   cursor: pointer;
+}
+
+#language {
+  display: none;
 }
 
 .logo img {

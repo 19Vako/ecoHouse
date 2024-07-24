@@ -7,47 +7,59 @@
     <link rel="stylesheet" href="SERVICES AND PRODUCTS.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
   </head>
   <body>
+
+
     <header>
       <nav class="navbar">
-        <div class="logo">
-          <a href="../index.html">
-            <img
-              src="../-Photo-/SERVICES AND PRODUCTS/Емблема-до-логотипуWhite.png"
-              alt="EcoHouse"
-            />
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="../index.html">Головна</a></li>
-          <li><a href="./SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
+          <div class="logo">
+              <a href="../index.html">
+                  <img src="../-Photo-/SERVICES AND PRODUCTS/Емблема-до-логотипуWhite.png" alt="EcoHouse"/>
+              </a>
+          </div>
+          <ul class="nav-links">
+              <li><a href="../index.html">Головна</a></li>
+              <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
+              <li>
+                <select class="language-select">
+                <option value="ua">UA</option>
+                <option value="en">EN</option>
+                </select>
+            </li>
+          </ul>
 
-          <li>
-            <select class="language-select">
+          <div class="nav-links-button">
+
+            <select id="language" class="language-select">
               <option value="ua">UA</option>
               <option value="en">EN</option>
             </select>
-          </li>
-        </ul>
-        <div class="menu-icon">
-          <img
-            src="../-Photo-/GENERAL/Меню.png"
-            alt="Menu Icon"
-            id="menu-icon"
-          />
-        </div>
+
+              <div id="menu-button" class="menu-icon">
+                  <img src="../-Photo-/SERVICES AND PRODUCTS/Меню.png" alt="Menu Icon"/>
+              </div>
+          </div>
       </nav>
-    </header>
+      <div id="mini-nav-links" class="mini-nav-links">
+          <ul class="nav-links-mini">
+              <li><a href="../index.html">Головна</a></li>
+              <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
+          </ul>
+      </div>
+  </header>
+
+
+
     <section class="NNNNN">
-      <section class="houses">
-        <h1>Будинки:</h1>
+
+      <section class="houses" >
+        <h1 class="title-1">Будинки:</h1>
         <p>
           Ласкаво просимо, у світ тепла й мистецтва, де кожна деталь вишуканої
           краси пронизана духом історії і розкоші природи. Наша будівельна
@@ -63,7 +75,7 @@
       </section>
 
       <section class="churches">
-        <h1>Церкви:</h1>
+        <h1 class="title-2">Церкви:</h1>
         <p>
           Ласкаво просимо, у світ тепла й мистецтва, де кожна деталь вишуканої
           краси пронизана духом історії і розкоші природи. Наша будівельна
@@ -75,7 +87,7 @@
       </section>
 
       <section class="baths">
-        <h1>Бані або лазні:</h1>
+        <h1 class="title-3">Бані або лазні:</h1>
         <p>
           Наша компанія спеціалізується на будівництві бань з дерева, поєднуючи
           традиційні методи з сучасними технологіями. Використовуючи тільки
@@ -89,7 +101,7 @@
       </section>
 
       <section class="feature">
-        <h1>Альтанки і гойдалки:</h1>
+        <h1 class="title-4">Альтанки і гойдалки:</h1>
         <p>
           Наша компанія спеціалізується на будівництві високоякісних дерев'яних
           альтанок та гойдалок. Ми створюємо затишні та функціональні альтанки,
@@ -99,6 +111,7 @@
           надійність, комфорт та природну красу.
         </p>
       </section>
+
     </section>
 
     <footer>
@@ -144,6 +157,8 @@
         </div>
       </div>
     </footer>
-    <script defer src="SERVICES_AND_PRODUCTS.js"></script>
+
+    
+    <script src="SERVICES AND PRODUCTS.js"></script>
   </body>
 </html>
