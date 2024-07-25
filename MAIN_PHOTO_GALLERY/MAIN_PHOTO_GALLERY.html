@@ -13,88 +13,99 @@
     />
   </head>
   <body>
+
+
     <header>
       <nav class="navbar">
-        <div class="logo">
-          <a href="index.html">
-            <img
-              src="../-Photo-/GENERAL/Емблема-до-логотипу.png"
-              alt="EcoHouse"
-            />
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="D:\EcoHouse\MAIN\MAIN.html">Головна</a></li>
-          <li>
-            <a
-              href="D:\EcoHouse\SERVICES AND PRODUCTS\SERVICES AND PRODUCTS.html"
-              >Послуги та продукція</a
-            >
-          </li>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="D:\EcoHouse\CONTACTS\CONTACTS.html">Контакти</a></li>
-          <li>
-            <select class="language-select">
+          <div class="logo">
+              <a href="../index.html">
+                  <img src="../-Photo-/SERVICES AND PRODUCTS/Емблема-до-логотипуWhite.png" alt="EcoHouse"/>
+              </a>
+          </div>
+          <ul class="nav-links">
+              <li><a href="../index.html">Головна</a></li>
+              <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
+              <li>
+                <select class="language-select">
+                <option value="ua">UA</option>
+                <option value="en">EN</option>
+                </select>
+            </li>
+          </ul>
+
+          <div class="nav-links-button">
+
+            <select id="language" class="language-select">
               <option value="ua">UA</option>
               <option value="en">EN</option>
             </select>
-          </li>
-        </ul>
 
-
-        <div class="menu-icon">
-          <img src="../-Photo-/GENERAL/Меню.png" alt="Menu Icon" id="menu-icon"/>
-        </div>
+              <div id="menu-button" class="menu-icon">
+                  <img src="../-Photo-/SERVICES AND PRODUCTS/Меню.png" alt="Menu Icon"/>
+              </div>
+          </div>
       </nav>
+      <div id="mini-nav-links" class="mini-nav-links">
+          <ul class="nav-links-mini">
+              <li><a href="../index.html">Головна</a></li>
+              <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
+          </ul>
+      </div>
     </header>
-
-
-    <div class="title">
-      <h1>ФОТОГАЛЕРЕЯ</h1>
-    </div>
     
-    <section class="photo-gallery-container">
-
-      <section class="photo-gallery">
-        <div class="layer back left">
-          <img src="../-Photo-/MAIN/будинок 1 .jpg" alt="Back Layer Left" />
+    
+    
+    <section class="slider-box">
+    <div class="title-box">
+      <h1 >ФОТОГАЛЕРЕЯ</h1>
+    </div>
+  
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="../-Photo-/MAIN/будинок 1 .jpg" alt="Image  5">
         </div>
-        <div class="layer back right">
-          <img src="../-Photo-/MAIN/будинок 2  .jpg" alt="Back Layer Right" />
+        <div class="slide">
+            <img src="../-Photo-/MAIN_PHOTO_GALLERY/Будинок.jpg" alt="Image 1">
         </div>
-        <div class="layer middle left">
-          <img src="../-Photo-/MAIN/Будинок 3 .jpeg" alt="Middle Layer Left" />
+        <div class="slide">
+          <img src="../-Photo-/MAIN/ad2dec793ae641d9bd52756398c01cab.jpeg" alt="Image 2">
         </div>
-        <div class="layer middle right">
-          <img src="../-Photo-/MAIN/ліс.png" alt="Middle Layer Right" />
+        <div class="slide">
+          <img src="../-Photo-/MAIN/Будинок 3 .jpeg" alt="Image 3">
         </div>
-        <div class="layer front center">
-          <img src="../-Photo-/MAIN/Фон головної сторінки.jpg" alt="Front Layer Center" />
+        <div class="slide">
+          <img src="../-Photo-/MAIN/будинок 2  .jpg" alt="Image 4">
         </div>
-      </section>
-
-      <div class="navigation-buttons">
-        <button id="prevButton">
-          <img
-            src="../-Photo-/MAIN_PHOTO_GALLERY/Стрілочка.png"
-            alt="Previous"
-          />
-        </button>
-        <button id="nextButton" class="flipped">
-          <img src="../-Photo-/MAIN_PHOTO_GALLERY/Стрілочка.png" alt="Next" />
-        </button>
+        
+        <div class="slide">
+          <img src="../-Photo-/MAIN_PHOTO_GALLERY/Гойдалки_----.png" alt="Image 4">
+        </div>
+        <div class="slide">
+          <img src="../-Photo-/MAIN_PHOTO_GALLERY/Церква.jpg" alt="Image 4">
+        </div>
+        
+        <!-- Добавьте больше слайдов по мере необходимости -->
+        <div class="navigation">
+            
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
       </div>
+    </div>
     </section>
+
+
+
     <footer>
-      <div class="footer-logo">
-        <img
-          src="../-Photo-/GENERAL/Емблема-до-логотипу.png"
-          alt="EcoHouse Logo"
-        />
-      </div>
       <div class="logo_f">
-        <h1>ECOHAUSE</h1>
+        <h1>ECOHOUSE<img class="footer-logo" src="../-Photo-/GENERAL/Емблема-до-логотипу.png" alt="EcoHouse Logo"/></h1>
       </div>
+
       <div class="footer-container">
         <div class="footer-about">
           <h3>Про нас</h3>
@@ -105,43 +116,35 @@
             церкви, бази відпочинку, ресторани, котеджі, бані, альтанки.
           </p>
           <p>
-            Менеджер з персоналу <span class="highlight">+380682168704</span>
+            Менеджер з персоналу <a href="tel:+380682168704" class="highlight">+380682168704</a>
           </p>
         </div>
+
         <div class="footer-contacts">
           <h3>Контакти</h3>
           <div class="phone">
-            <img
-              src="../-Photo-/GENERAL/трубка.png"
-              alt="Телефон"
-              class="icon"
-            />
+            <img src="../-Photo-/GENERAL/трубка.png" alt="Телефон" class="icon"/>
             <a href="tel:+380682168704"><p>+380682168704</p></a>
-            <a href="tel:+380682168704" class="consult-link"
-              >замовити консультацію</a
-            >
+            <a href="tel:+380682168704" class="consult-link">замовити консультацію</a>
           </div>
           <div class="e-mail">
             <img src="../-Photo-/GENERAL/Пошта.png" alt="e-mail" class="icon" />
             <a href="mailto:ecohouse@gmail.com"><p>ecohouse@gmail.com</p></a>
           </div>
         </div>
+
         <div class="footer-navigation">
           <h3>Навігація</h3>
           <ul>
-            <li><a href="D:\EcoHouse\MAIN\MAIN.html">Головна</a></li>
+            <li><a href="../index.html">Головна</a></li>
             <li><a href="#">Про нас</a></li>
-            <li>
-              <a
-                href="D:\EcoHouse\SERVICES AND PRODUCTS\SERVICES AND PRODUCTS.html"
-                >Послуги та продукція</a
-              >
-            </li>
-            <li><a href="D:\EcoHouse\CONTACTS\CONTACTS.html">Контакти</a></li>
+            <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
+            <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
           </ul>
         </div>
       </div>
     </footer>
+    
     <script src="MAIN_PHOTO_GALLERY.js"></script>
   </body>
 </html>
