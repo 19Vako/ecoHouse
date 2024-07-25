@@ -163,7 +163,20 @@
       margin-top: 0;
     }
     
-    
+    .title {
+      color: white;
+        position: relative;
+        z-index: 4;
+        font-size: 5vw;
+        margin: 0;
+        margin-left: 5vw;
+    }
+    .SERVICE {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: end;
+    }
     
     .houses {
       background-image: url("../-Photo-/SERVICES AND PRODUCTS/Будинок.jpg");
@@ -175,14 +188,7 @@
       position: relative;
       text-align: left;
     }
-    .title-1 {
-      color: white;
-        position: relative;
-        z-index: 1;
-        font-size: 5vw;
-        padding: 35vw 0vw 5vw 5vw; 
-        margin: 0;
-    }
+    
     .houses::before {
       content: "";
       position: absolute;
@@ -195,7 +201,6 @@
     }
     .houses p {
       color: white;
-      position: absolute;
       bottom: 0;
       left: 0;
       font-size: 3vw;
@@ -215,14 +220,7 @@
       position: relative;
       text-align: left;
     }
-    .title-2 {
-      color: white;
-        position: relative;
-        z-index: 1;
-        font-size: 5vw;
-        padding: 51vw 0vw 5vw 5vw;
-        margin: 0;
-    }
+    
     .churches::before {
       content: "";
       position: absolute;
@@ -235,7 +233,7 @@
     }
     .churches p {
       color: white;
-        position: absolute;
+        
         bottom: 0;
         left: 0;
         font-size: 3vw;
@@ -254,14 +252,7 @@
       position: relative;
       text-align: left;
     }
-    .title-3 {
-      color: white;
-        position: relative;
-        z-index: 1;
-        font-size: 5vw;
-        padding: 40vw 0vw 5vw 5vw;
-        margin: 0;
-    }
+    
     .baths::before {
       content: "";
       position: absolute;
@@ -274,7 +265,7 @@
     }
     .baths p {
       color: white;
-      position: absolute;
+      
       bottom: 0;
       left: 0;
       font-size: 3vw;
@@ -295,14 +286,7 @@
       position: relative;
       text-align: left;
     }
-    .title-4 {
-      color: white;
-      position: relative;
-      z-index: 1;
-      font-size: 5vw;
-      padding: 51vw 0vw 5vw 5vw;
-      margin: 0;
-    }
+    
     .feature::before {
       content: "";
       position: absolute;
@@ -315,7 +299,7 @@
     }
     .feature p {
       color: white;
-        position: absolute;
+        
         bottom: 0;
         left: 0;
         font-size: 3vw;
