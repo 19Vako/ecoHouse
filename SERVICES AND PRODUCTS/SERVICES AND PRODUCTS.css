@@ -286,7 +286,6 @@
       position: relative;
       text-align: left;
     }
-    
     .feature::before {
       content: "";
       position: absolute;
@@ -596,6 +595,16 @@ ul {
 
 
 
+.title {
+  color: white;
+  position: relative;
+  z-index: 4;
+  font-size: 5vw;
+  margin: 0;
+  margin-left: 5vw;
+}
+
+
 .houses {
   background-image: url("../-Photo-/SERVICES AND PRODUCTS/Будинок.jpg");
   background-color: rgba(0, 0, 0, 0.9);
@@ -605,14 +614,6 @@ ul {
   color: white;
   position: relative;
   text-align: left;
-}
-.title-1 {
-  color: white;
-    position: relative;
-    z-index: 1;
-    font-size: 5vw;
-    padding: 28vw 0vw 5vw 5vw; 
-    margin: 0;
 }
 .houses::before {
   content: "";
@@ -627,7 +628,6 @@ ul {
 .houses p,
 .baths p {
   color: white;
-  position: absolute;
   bottom: 0;
   left: 0;
   font-size: 2vw;
@@ -646,14 +646,6 @@ ul {
   position: relative;
   text-align: left;
 }
-.title-2 {
-  color: white;
-  position: relative;
-  z-index: 1;
-  font-size: 5vw;
-  padding: 33vw 0vw 5vw 5vw; 
-  margin: 0;
-}
 .churches::before {
   content: "";
   position: absolute;
@@ -666,7 +658,6 @@ ul {
 }
 .churches p {
   color: white;
-    position: absolute;
     bottom: 0;
     left: 0;
     font-size: 2vw;
@@ -684,14 +675,6 @@ ul {
   color: white;
   position: relative;
   text-align: left;
-}
-.title-3 {
-  color: white;
-  position: relative;
-  z-index: 1;
-  font-size: 5vw;
-  padding: 30vw 0vw 5vw 5vw; 
-  margin: 0;
 }
 .baths::before {
   content: "";
@@ -715,14 +698,6 @@ ul {
   position: relative;
   text-align: left;
 }
-.title-4 {
-  color: white;
-  position: relative;
-  z-index: 1;
-  font-size: 5vw;
-  padding: 35vw 0vw 5vw 5vw; 
-  margin: 0;
-}
 .feature::before {
   content: "";
   position: absolute;
@@ -735,7 +710,7 @@ ul {
 }
 .feature p {
   color: white;
-    position: absolute;
+    
     bottom: 0;
     left: 0;
     font-size: 2vw;
