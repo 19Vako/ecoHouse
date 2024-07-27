@@ -336,25 +336,49 @@
     
     .footer-container {
       display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      padding: 0;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
     }
+  
+    .footer-about {
+      width: 83vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+    }
+  
     
+    
+  
     .footer-about h3,
     .footer-contacts h3,
     .footer-navigation h3 {
       color: #5ec55e;
-      font-size: 2vw;
+      font-size: 4vw;
     }
     
     .footer-about p,
     .footer-contacts p {
-      font-size: 2vw;
-        padding: 0;
-        margin-right: 3vw;
+      font-size: 3vw;
+      padding: 0;
+      margin-top: 0;
     }
     
+  
+    
+  
+    .footer-contacts {
+      width: 83vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  
     .footer-contacts .icon {
       width: 5vw;
         height: 5vw;
@@ -368,10 +392,9 @@
         box-sizing: border-box;
     }
     
-    .e-mail {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .phone {
+      width: 40vw;
+      margin-bottom: 2vw;
     }
     
     .e-mail .icon img {
@@ -382,12 +405,21 @@
       color: white;
       text-decoration: none;
       display: inline-block;
-      font-size: 1vw;
+      font-size: 2vw;
+      width: 33vw;
       margin-bottom: 1vw;
     }
     
     .footer-contacts a:hover {
       text-decoration: underline;
+    }
+  
+    .footer-navigation {
+      width: 83vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     
     .footer-navigation ul {
@@ -397,13 +429,14 @@
     
     .footer-navigation li {
       margin: 3vw 0;
-      display: flex
+      display: flex;
+      justify-content: center;
     }
     
     .footer-navigation a {
       color: white;
-        text-decoration: none;
-        font-size: 1.5vw;
+      text-decoration: none;
+      font-size: 3vw;
     }
     
     .footer-navigation a:hover {
@@ -412,7 +445,7 @@
     
     .footer-contacts h3,
     p {
-      padding-left: 5vw;
+      padding: 0;
     }
     
     .highlight {
@@ -747,8 +780,13 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   align-items: flex-start;
-  padding: 0 50px;
+  padding: 0px;
+}
+
+.footer-about {
+  display: block;
 }
 
 .footer-about h3,
@@ -765,6 +803,11 @@ footer {
     margin-right: 3vw;
 }
 
+.footer-contacts {
+  display: block;
+  width: 26.7vw;
+}
+
 .footer-contacts .icon {
   width: 5vw;
     height: 5vw;
@@ -778,8 +821,14 @@ footer {
     box-sizing: border-box;
 }
 
+.phone {
+  display: block;
+  margin-bottom: 0vw;
+  width: 26.7vw;
+}
 .e-mail {
-  display: flex;
+  display: contents;
+ 
   justify-content: center;
   align-items: center;
 }
@@ -788,12 +837,19 @@ footer {
   padding-left: 1vw;
 }
 
+.footer-navigation {
+  width: 17vw;
+  display: block;
+  
+}
+
 .footer-contacts a {
   color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
   margin-bottom: 1vw;
+  width: 12.25vw;
 }
 
 .footer-contacts a:hover {
@@ -806,8 +862,9 @@ footer {
 }
 
 .footer-navigation li {
-  margin: 10px 0;
-
+  display: block;
+  margin: 2vw 0;
+  width: 17vw;
 }
 
 .footer-navigation a {

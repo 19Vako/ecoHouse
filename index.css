@@ -502,25 +502,49 @@
   
   .footer-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
   }
+
+  .footer-about {
+    width: 83vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  }
+
   
+  
+
   .footer-about h3,
   .footer-contacts h3,
   .footer-navigation h3 {
     color: #5ec55e;
-    font-size: 2vw;
+    font-size: 4vw;
   }
   
   .footer-about p,
   .footer-contacts p {
-    font-size: 2vw;
-      padding: 0;
-      margin-right: 3vw;
+    font-size: 3vw;
+    padding: 0;
+    margin-top: 0;
   }
   
+
+  
+
+  .footer-contacts {
+    width: 83vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   .footer-contacts .icon {
     width: 5vw;
       height: 5vw;
@@ -534,10 +558,9 @@
       box-sizing: border-box;
   }
   
-  .e-mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .phone {
+    width: 40vw;
+    margin-bottom: 2vw;
   }
   
   .e-mail .icon img {
@@ -548,12 +571,21 @@
     color: white;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 2vw;
+    width: 33vw;
     margin-bottom: 1vw;
   }
   
   .footer-contacts a:hover {
     text-decoration: underline;
+  }
+
+  .footer-navigation {
+    width: 83vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .footer-navigation ul {
@@ -564,12 +596,13 @@
   .footer-navigation li {
     margin: 3vw 0;
     display: flex;
+    justify-content: center;
   }
   
   .footer-navigation a {
     color: white;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
   
   .footer-navigation a:hover {
@@ -614,23 +647,19 @@ body {
   background-color: #f9f9f9;
   overflow-x: hidden;
 }
-
 a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s;
 }
-
 a:hover {
   color: #99ed82;
 }
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -645,28 +674,23 @@ ul {
   z-index: 1000;
   transition: background-color 0.3s, padding 0.3s;
 }
-
 .nav-links {
   display: flex;
     gap: 3vw;
     margin-left: auto !important;
     margin-right: 4vw;
 }
- 
 .nav-links li {
   position: relative;
 }
-
 .nav-links a {
   color: #010101;
   font-size: 2vw;
   transition: color 0.3s;
 }
-
 .nav-links a:hover {
   color: #8ebc81;
 }
-
 .language-select {
   background: transparent;
   border: none;
@@ -674,36 +698,30 @@ ul {
   font-size: 2vw;
   cursor: pointer;
 }
-
 #language {
   display: none;
 }
-
 .logo img {
   height: 6vw;
   margin-left: 4vw;
   padding: 0;
   border: 0;
 }
-
 .menu-icon {
   display: none;
   cursor: pointer;
   margin-right: 20px;
 }
-
 .menu-icon img {
   width: 30px;
   height: 30px;
   padding-right: 8px;
 }
-
 .burger {
   display: none;
   flex-direction: column;
   cursor: pointer;
 }
-
 .burger div {
   width: 25px;
   height: 3px;
@@ -711,19 +729,15 @@ ul {
   margin: 5px;
   transition: all 0.3s;
 }
-
 .burger.active div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-
 .burger.active div:nth-child(2) {
   opacity: 0;
 }
-
 .burger.active div:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
 .nav-links.active {
   display: flex;
   flex-direction: column;
@@ -734,13 +748,10 @@ ul {
   background-color: #a19282;
   margin-top: 0;
 }
-
 .nav-links.active li {
   text-align: center;
   padding: 10px 0;
 }
-
-
 .hero {
   position: relative;
   background-image: url("./-Photo-/MAIN/Фон головної сторінки.jpg");
@@ -749,12 +760,10 @@ ul {
   color: white;
   padding-top: 80px;
 }
-
- .icon {
+.icon {
   width: 5vw;
   height: 5vw;
 }
-
 .hero::before {
   content: "";
   position: absolute;
@@ -765,14 +774,12 @@ ul {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-
 .hero .container {
   position: relative;
   z-index: 2;
   padding-bottom: 457px;
   margin: 0;
 }
-
 .ECOHOUSE-logo {
   display: none;
 }
@@ -784,7 +791,6 @@ ul {
     padding: 0;
     font-weight: bold;
 }
-
 .hero p {
   font-size: 4vw;
   margin: 5px 0 0 80px;
@@ -793,21 +799,18 @@ ul {
   white-space: pre;
   
 }
-
 .contour {
   position: absolute;
   bottom: 5%;
   z-index: 2;
   white-space: pre;
 }
-
 .contour img {
   width: 15vw;
   height: auto;
   float: left;
   margin-left: 30px;
 }
-
 .contour p {
   font-size: 2vw;
   margin: 0;
@@ -816,56 +819,46 @@ ul {
   display: inline-block;
   vertical-align: top;
 }
-
 .features {
   background: #d1e0d5;
   padding: 6vw 0;
 }
-
 .features .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .feature img.houses {
   width: 60px;
   height: 50px;
 }
-
 .feature img.churches {
   width: 45px;
   height: 65px;
 }
-
 .feature img.baths {
   width: 60px;
   height: 45px;
 }
-
 .feature img.gazebos {
   width: 55px;
   height: 55px;
 }
-
 .feature {
   text-align: center;
 }
-
 .feature img {
   margin-bottom: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .feature p {
   padding: 0px;
   margin: 5px 0 0;
   text-align: center;
   font-size: 2vw;
 }
-
 .why {
   position: relative;
   background: url("./-Photo-/MAIN/ліс.png") no-repeat center center;
@@ -874,7 +867,6 @@ ul {
   text-align: left;
   color: white;
 }
-
 .why::before {
   content: "";
   position: absolute;
@@ -885,13 +877,11 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
 .why .title,
 .why .why-container {
   position: relative;
   z-index: 2;
 }
-
 .title {
   font-weight: bold;
   color: white;
@@ -899,11 +889,9 @@ ul {
   margin-bottom: 40px;
   font-size: 3.3vw;
 }
-
 .highlight {
   color: rgb(94, 183, 94);
 }
-
 .why-container {
   display: flex;
   flex-direction: column;
@@ -911,18 +899,15 @@ ul {
   font-size: 1.3vw;
   line-height: 1.35;
 }
-
 .why-item {
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;
   align-items: center;
 }
-
 .why-item img {
   width: 45vw;
 }
-
 .why-item p {
   font-size: 1.4em;
   color: white;
@@ -930,15 +915,12 @@ ul {
   margin-left: 35px;
   margin-right: 20px;
 }
-
 .why-item.reverse {
   flex-direction: row-reverse;
 }
-
 .why-item.reverse img {
   margin-left: 20px;
 }
-
 .photo {
   background-color: #d1e0d5;
   padding: 20px 0;
@@ -950,32 +932,26 @@ ul {
   color: white;
   padding-top: 80px;
 }
-
 .photo h1 {
   font-size: 5vw;
   margin-bottom: 5vw;
   margin-top: 10vw;
   font-weight: 700;
 }
-
 .titleblack {
   color: black;
 }
-
 .titlegray {
   color: gray;
 }
-
 .photo1 {
   display: inline-block;
   margin: 0 10px;
 }
-
 .photo1 img {
   width: 25vw;
   height: 18vw;
 }
-
 .photo-description {
   display: flex;
   align-items: center;
@@ -983,38 +959,31 @@ ul {
   margin-top: 20px;
   color: black;
 }
-
 .photo-description p {
   margin: 0 10px;
 }
-
 .clickBox {
   display: flex;
   height: 24vw;
   align-items: center;
   justify-content: center;
 }
-
 .clickBox a {
   display: flex;
   align-items: center;
 
 }
-
 .click {
   width: 10vw;
   height: 5vw;
 }
-
 .click-icon img {
   width: 30px;
   height: auto;
 }
-
 .phoneIcon {
   width: 5vw;
 }
-
 .circle {
   position: absolute;
   bottom: 0;
@@ -1028,19 +997,16 @@ ul {
   margin-bottom: 7vw;
   margin-left: 11vw;
 }
-
 .circle img {
   width: 13vw;
   height: auto;
   margin-bottom: 3vw;
   margin-left: 11vw;
 }
-
 .photo_text {
   display: flex;
   align-items: center;
 }
-
 .photo_text p {
   color: black;
   font-size: 2vw;
@@ -1051,6 +1017,11 @@ ul {
   text-align: left;
 
 }
+
+
+
+
+
 
 footer {
   background-color: #2b4d3f;
@@ -1067,6 +1038,7 @@ footer {
 .logo_f h1 {
   font-size: 5vw;
   color: black;
+  font-family: monospace;
 }
 
 .footer-logo  {
@@ -1077,8 +1049,13 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   align-items: flex-start;
-  padding: 0 50px;
+  padding: 0px;
+}
+
+.footer-about {
+  display: block;
 }
 
 .footer-about h3,
@@ -1095,6 +1072,11 @@ footer {
     margin-right: 3vw;
 }
 
+.footer-contacts {
+  display: block;
+  width: 26.7vw;
+}
+
 .footer-contacts .icon {
   width: 5vw;
     height: 5vw;
@@ -1108,8 +1090,14 @@ footer {
     box-sizing: border-box;
 }
 
+.phone {
+  display: block;
+  margin-bottom: 0vw;
+  width: 26.7vw;
+}
 .e-mail {
-  display: flex;
+  display: contents;
+ 
   justify-content: center;
   align-items: center;
 }
@@ -1118,12 +1106,19 @@ footer {
   padding-left: 1vw;
 }
 
+.footer-navigation {
+  width: 17vw;
+  display: block;
+  
+}
+
 .footer-contacts a {
   color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
   margin-bottom: 1vw;
+  width: 12.25vw;
 }
 
 .footer-contacts a:hover {
@@ -1136,8 +1131,9 @@ footer {
 }
 
 .footer-navigation li {
-  margin: 10px 0;
-
+  display: block;
+  margin: 2vw 0;
+  width: 17vw;
 }
 
 .footer-navigation a {

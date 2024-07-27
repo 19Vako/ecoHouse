@@ -14,89 +14,86 @@
   </head>
   <body>
 
-
     <header>
       <nav class="navbar">
-          <div class="logo">
-              <a href="../index.html">
-                  <img src="../-Photo-/SERVICES AND PRODUCTS/Емблема-до-логотипуWhite.png" alt="EcoHouse"/>
-              </a>
-          </div>
-          <ul class="nav-links">
-              <li><a href="../index.html">Головна</a></li>
-              <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
-              <li><a href="#">Про нас</a></li>
-              <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
-              <li>
-                <select class="language-select">
-                <option value="ua">UA</option>
-                <option value="en">EN</option>
-                </select>
-            </li>
-          </ul>
-
-          <div class="nav-links-button">
-
-            <select id="language" class="language-select">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../-Photo-/GENERAL/Емблема-до-логотипу.png" alt="EcoHouse"/>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги та продукція</a></li>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
+          <li>
+              <select class="language-select">
               <option value="ua">UA</option>
               <option value="en">EN</option>
-            </select>
+              </select>
+          </li>
+        </ul>
 
-              <div id="menu-button" class="menu-icon">
-                  <img src="../-Photo-/SERVICES AND PRODUCTS/Меню.png" alt="Menu Icon"/>
-              </div>
-          </div>
+      <div  class="nav-links-button" onclick="">
+        
+        <select id="language" class="language-select">
+          <option value="ua">UA</option>
+          <option value="en">EN</option>
+        </select>
+
+        <div id="menu-button" class="menu-icon" onclick="">
+          <img src="../-Photo-/GENERAL/Меню.png" alt="Menu Icon" id="menu-icon"/>
+        </div>
+      </div>
+      
+      
       </nav>
       <div id="mini-nav-links" class="mini-nav-links">
-          <ul class="nav-links-mini">
-              <li><a href="../index.html">Головна</a></li>
-              <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги</a></li>
-              <li><a href="#">Про нас</a></li>
-              <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
-          </ul>
+        <ul class="nav-links-mini">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="../SERVICES AND PRODUCTS/SERVICES AND PRODUCTS.html">Послуги</a></li>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="../CONTACTS/CONTACTS.html">Контакти</a></li>
+        </ul>
       </div>
     </header>
-    
-    
-    
-    <section class="slider-box">
-    <div class="title-box">
-      <h1 >ФОТОГАЛЕРЕЯ</h1>
+
+
+    <div class="title">
+      <h1>ФОТОГАЛЕРЕЯ</h1>
     </div>
-  
-    <div class="slider-container">
-      <div class="slider">
-        <div class="slide">
-          <img src="../-Photo-/MAIN/будинок 1 .jpg" alt="Image  5">
+    <section class="photo-gallery-container">
+      <section class="photo-gallery">
+        <div class="layer back left">
+          <img src="../-Photo-/MAIN/будинок 1 .jpg" alt="Back Layer Left" />
         </div>
-        <div class="slide">
-            <img src="../-Photo-/MAIN_PHOTO_GALLERY/Будинок.jpg" alt="Image 1">
+        <div class="layer back right">
+          <img src="../-Photo-/MAIN/будинок 2  .jpg" alt="Back Layer Right" />
         </div>
-        <div class="slide">
-          <img src="../-Photo-/MAIN/ad2dec793ae641d9bd52756398c01cab.jpeg" alt="Image 2">
+        <div class="layer middle left">
+          <img src="../-Photo-/MAIN/Будинок 3 .jpeg" alt="Middle Layer Left" />
         </div>
-        <div class="slide">
-          <img src="../-Photo-/MAIN/Будинок 3 .jpeg" alt="Image 3">
+        <div class="layer middle right">
+          <img src="../-Photo-/MAIN/ліс.png" alt="Middle Layer Right" />
         </div>
-        <div class="slide">
-          <img src="../-Photo-/MAIN/будинок 2  .jpg" alt="Image 4">
+        <div class="layer front center">
+          <img
+            src="../-Photo-/MAIN/Фон головної сторінки.jpg"
+            alt="Front Layer Center"
+          />
         </div>
-        
-        <div class="slide">
-          <img src="../-Photo-/MAIN_PHOTO_GALLERY/Гойдалки_----.png" alt="Image 4">
-        </div>
-        <div class="slide">
-          <img src="../-Photo-/MAIN_PHOTO_GALLERY/Церква.jpg" alt="Image 4">
-        </div>
-        
-        <!-- Добавьте больше слайдов по мере необходимости -->
-        <div class="navigation">
-            
-            <button class="prev">❮</button>
-            <button class="next">❯</button>
-        </div>
+      </section>
+      <div class="navigation-buttons">
+        <button id="prevButton">
+          <img
+            src="../-Photo-/MAIN_PHOTO_GALLERY/Стрілочка.png"
+            alt="Previous"
+          />
+        </button>
+        <button id="nextButton" class="flipped">
+          <img src="../-Photo-/MAIN_PHOTO_GALLERY/Стрілочка.png" alt="Next" />
+        </button>
       </div>
-    </div>
     </section>
 
 
@@ -144,7 +141,8 @@
         </div>
       </div>
     </footer>
-    
+
+
     <script src="MAIN_PHOTO_GALLERY.js"></script>
   </body>
 </html>
